@@ -36,6 +36,7 @@ Feature Extraction and Model implementation https://colab.research.google.com/dr
 
 Image Comparison (post Siamese model training) https://colab.research.google.com/drive/1trMhaqYBv0JYmTX6iFH-xqS3goO4MYb0?usp=sharing
 
+Pytesseract addition page code https://colab.research.google.com/drive/1Btr0bTCvM0QXPfe7ez1S3HOLG9iCVNuk#scrollTo=_K6MzRl26-Vs
 
 These are other notebooks that were used for trial:
 
