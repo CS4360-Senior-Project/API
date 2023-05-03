@@ -28,12 +28,22 @@ python manage.py migrate
 ## Google Colab Notebook Links: 
 
 ### Jada Sachetti- 
+The following notebooks contain code that is deployed on our web app for the handwriting analysis:
 
 Image Cropping https://colab.research.google.com/drive/19pK4YeHhuI_DLjxxy74lYXk4KzhUBr9X?usp=sharing
 
 Feature Extraction and Model implementation https://colab.research.google.com/drive/1FYU0FcZU6zAjOhbmENlXJb4Oyi0Mp3J6#scrollTo=f5PhhAtigNbU
 
 Image Comparison (post Siamese model training) https://colab.research.google.com/drive/1trMhaqYBv0JYmTX6iFH-xqS3goO4MYb0?usp=sharing
+
+
+These are other notebooks that were used for trial:
+
+OCR and Pytesseract https://colab.research.google.com/drive/1xzRLc0nFE3g5CQJtGGQHEfzDwFQ1Gvej#scrollTo=Gu1ICF_SwzBY
+
+More OCR Attempts with pretrained models https://colab.research.google.com/drive/1MsNAzIxSttAJEVZ9fkD4ohU9WC_TeMWR
+
+"Last Hope" notebook includes new trials of image preprocessing and Siamese model implementation https://colab.research.google.com/drive/1rO6S7h_EgXcC0E5VAvCQ69TFSHC7XDlj
 
 ### Emily Carrillo- 
 
