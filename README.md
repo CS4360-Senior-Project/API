@@ -59,5 +59,3 @@ Character Segmentation Rough Drafts / Test Part 1 and Part 2 https://colab.resea
 Image Processing Rough Drafts / Test Part 1 , Part 2 , and Part 3 https://colab.research.google.com/drive/1tyh3cg-UqW4n386KUpFpx0Mb6fyhB3O-?authuser=1  /  https://colab.research.google.com/drive/1qLup11nLxwqKxYYjvpYhI0Ci6GMdBqL6?authuser=1#scrollTo=zNil6_xp3xtf / https://colab.research.google.com/drive/1xW1o7ZPrZt1PwGjvCXRl_OUUwiU2YVR_?authuser=1
 
 Model Training Using 3 column csv ( positive, negative, anchor ) Part 1 and Part 2 https://colab.research.google.com/drive/1a8khyZHmwRNHLLn-2OdU7QHHaMberpPl?authuser=1#scrollTo=Dff2SeP75WCO  /  https://colab.research.google.com/drive/1q2ANNNi5j-GcOZ3OEbVqIbjw6851BjOl?authuser=1
-
-

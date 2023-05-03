@@ -11,10 +11,16 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
+
+PORT = 8000
+
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+MEDIA_URL = '/Photos/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "Photos")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -37,10 +43,23 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+    'corsheaders',
+    'api'
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.MultiPartParser',
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.JSONParser',
+    ],
+}
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -76,8 +95,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'CLIENT': {
+            "host": "mongodb+srv://millerac38:admin@cluster0.qrwxt6u.mongodb.net/?retryWrites=true&w=majority",
+            "name": "kataba",
+            "authMechanism": "SCRAM-SHA-1"  # For atlas cloud db connection
+        }
     }
 }
 
